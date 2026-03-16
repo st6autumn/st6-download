@@ -6,7 +6,7 @@
 
 **Download videos and music from 9+ platforms with a beautiful animated UI.**
 
-[![Version](https://img.shields.io/badge/version-2.8.1-orange?style=for-the-badge)](https://github.com/st6autumn/st6-download/releases/latest)
+[![Version](https://img.shields.io/badge/version-2.9.0-orange?style=for-the-badge)](https://github.com/st6autumn/st6-download/releases/latest)
 [![Platform](https://img.shields.io/badge/platform-Windows-blue?style=for-the-badge&logo=windows)](https://github.com/st6autumn/st6-download/releases/latest)
 [![Electron](https://img.shields.io/badge/electron-28-47848F?style=for-the-badge&logo=electron)](https://www.electronjs.org/)
 [![License](https://img.shields.io/badge/license-Proprietary-red?style=for-the-badge)](LICENSE)
@@ -70,7 +70,7 @@ st6.download features **6 fully animated canvas themes**, each with unique parti
 | ❄️ **Snow** | Icy blue waves with unique per-flake snowflakes that dissolve on contact |
 | ✨ **Aurora** | Dark night sky with 80 stars and 6 aurora curtains with wave distortion |
 | 🔥 **Fire** | 60 fire particle blobs, 40 embers, and heat haze distortion |
-| ⬜ **Mono** | Black & white with grid lines, drifting orbs, and a brightness slider |
+| 🌑 **Mono** | Black & white with grid lines, drifting orbs, and a brightness slider |
 
 Each theme responds to the **Colour Hue** slider, letting you shift the entire palette within the theme's range.
 
@@ -90,12 +90,13 @@ Each theme responds to the **Colour Hue** slider, letting you shift the entire p
 ### UI
 - 🎨 **6 animated themes** with canvas particle effects
 - 🌈 **Colour Hue slider** for fine-tuning each theme
-- ⚙️ **Settings panel** with 3 tabs (General, Appearance, Features)
+- ⚙️ **Settings panel** with 4 tabs (System, General, Appearance, Features)
 - 📋 **Download history** with click-to-reload
 - 📖 **First-run tutorial** with step-by-step guided tour
 - 💬 **Themed tooltips** that match the dark UI
 - 🔔 **Windows notifications** on download complete
 - 🖱️ **Drag & drop** URLs from your browser
+- 🔔 **Update popup** — centered modal with changelog, progress bar, one-click install
 
 ### Technical
 - 🔄 **Auto-updates** — checks GitHub for new versions, downloads and installs the `.exe` automatically
@@ -104,6 +105,7 @@ Each theme responds to the **Colour Hue** slider, letting you shift the entire p
 - 🍪 **Cookie support** — for Instagram and sites requiring authentication
 - 🎯 **Smart filename cleaning** — removes hashtags, @mentions, junk characters from filenames
 - 📡 **Binary management** — downloads and manages yt-dlp, ffmpeg, and spotdl automatically
+- 🗑️ **Uninstall** — clean removal from Settings → System
 
 ---
 
@@ -113,31 +115,31 @@ Each theme responds to the **Colour Hue** slider, letting you shift the entire p
 1. **[Download the latest release](https://github.com/st6autumn/st6-download/releases/latest)**
 2. Run the installer
 3. Open st6.download
-4. Click **⬇ Download All Dependencies** in Settings (one-time setup)
+4. Click **⬇ Download All Dependencies** in Settings → System (one-time setup)
 5. Start downloading!
 
 ### Spotify / Apple Music / Tidal Setup
 These platforms require free Spotify API credentials (takes 2 minutes):
 1. Go to [developer.spotify.com/dashboard](https://developer.spotify.com/dashboard)
 2. Create an app → set redirect URI to `https://localhost:8888/callback`
-3. Copy Client ID and Client Secret into Settings
+3. Copy Client ID and Client Secret into Settings → General
 
 ### Instagram Setup
 Instagram requires cookies for authentication:
 1. Install the [Get cookies.txt LOCALLY](https://chromewebstore.google.com/detail/get-cookiestxt-locally/cclelndahbckbenkjhflpdbgdldlbecc) Chrome extension
 2. Go to instagram.com while logged in
-3. Export cookies → browse the file in Settings
+3. Export cookies → browse the file in Settings → General
 
 ---
 
 ## 🔄 Auto-Updates
 
 st6.download checks for updates automatically on startup. When a new version is available:
-1. A banner appears in Settings showing the new version and changelog
-2. Click **"Install Update"** to download the new installer
+1. A popup appears center-screen showing the new version and formatted changelog
+2. Click **"Install Update"** to download the new installer with a progress bar
 3. Click **"Install & Restart"** to apply
 
-You can also manually check via **Settings → Check for Updates**.
+You can also manually check via **Settings → System → Check for Updates**.
 
 ---
 
@@ -157,10 +159,11 @@ You can also manually check via **Settings → Check for Updates**.
 
 | Metric | Value |
 |--------|-------|
-| Frontend | 2,210 lines |
-| Backend | 1,548 lines |
+| Frontend | 2,353 lines |
+| Backend | 1,578 lines |
 | Themes | 6 animated |
 | Platforms | 9 supported |
+| Settings tabs | 4 (System, General, Appearance, Features) |
 | Canvas particles | Leaves, snowflakes, fireflies, embers, aurora curtains, orbs |
 
 ---
@@ -192,4 +195,5 @@ These projects are maintained by their respective communities and are not affili
 **[⬇ Download Latest Release](https://github.com/st6autumn/st6-download/releases/latest)**
 
 *st6.download — by [Autumn](https://linktr.ee/st6.autumn) 🍂*
+
 </div>
