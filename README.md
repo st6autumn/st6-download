@@ -6,7 +6,7 @@
 
 **Download videos and music from 9+ platforms with a beautiful animated UI.**
 
-[![Version](https://img.shields.io/badge/version-2.9.1-orange?style=for-the-badge)](https://github.com/st6autumn/st6-download/releases/latest)
+[![Version](https://img.shields.io/badge/version-2.9.2-orange?style=for-the-badge)](https://github.com/st6autumn/st6-download/releases/latest)
 [![Platform](https://img.shields.io/badge/platform-Windows-blue?style=for-the-badge&logo=windows)](https://github.com/st6autumn/st6-download/releases/latest)
 [![Electron](https://img.shields.io/badge/electron-28-47848F?style=for-the-badge&logo=electron)](https://www.electronjs.org/)
 [![License](https://img.shields.io/badge/license-Proprietary-red?style=for-the-badge)](LICENSE)
@@ -159,8 +159,8 @@ You can also manually check via **Settings → System → Check for Updates**.
 
 | Metric | Value |
 |--------|-------|
-| Frontend | 2,352 lines |
-| Backend | 1,668 lines |
+| Frontend | 2,387 lines |
+| Backend | 1,834 lines |
 | Themes | 6 animated |
 | Platforms | 9 supported |
 | Settings tabs | 4 (System, General, Appearance, Features) |
