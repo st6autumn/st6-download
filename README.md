@@ -6,7 +6,7 @@
 
 **Download videos and music from 9+ platforms with a beautiful animated UI.**
 
-[![Version](https://img.shields.io/badge/version-2.9.2-orange?style=for-the-badge)](https://github.com/st6autumn/st6-download/releases/latest)
+[![Version](https://img.shields.io/badge/version-2.10.0-orange?style=for-the-badge)](https://github.com/st6autumn/st6-download/releases/latest)
 [![Platform](https://img.shields.io/badge/platform-Windows-blue?style=for-the-badge&logo=windows)](https://github.com/st6autumn/st6-download/releases/latest)
 [![Electron](https://img.shields.io/badge/electron-28-47848F?style=for-the-badge&logo=electron)](https://www.electronjs.org/)
 [![License](https://img.shields.io/badge/license-Proprietary-red?style=for-the-badge)](LICENSE)
@@ -29,106 +29,50 @@ Everything runs locally on your machine. No accounts required, no data collected
 
 ---
 
-## 🎬 Supported Platforms
+## 🌐 Supported Platforms
 
-### Video
-| Platform | Quality | Subtitles | Thumbnails |
-|----------|---------|-----------|------------|
-| **YouTube** | Up to 4K | ✅ English (burn-in) | ✅ |
-| **TikTok** | Best available | ❌ | ✅ Embedded |
-| **Instagram** | Best available | ❌ | ✅ |
-| **Twitter/X** | Best available | ❌ | ✅ |
-| **Other URLs** | Auto-detected | ✅ English (burn-in) | ✅ |
-
-### Music
-| Platform | Formats | Cover Art | Method |
-|----------|---------|-----------|--------|
-| **Spotify** | MP3 / WAV / FLAC | ✅ Embedded | via spotdl |
-| **SoundCloud** | MP3 / WAV / FLAC | ✅ Embedded | Direct stream |
-| **Apple Music** | MP3 / WAV / FLAC | ✅ Embedded | via spotdl |
-| **Tidal** | MP3 / WAV / FLAC | ✅ Embedded | via spotdl |
-
-### "Other" URL Extraction
-For streaming sites that aren't directly supported (anime sites, movie sites, etc.), st6.download uses a built-in browser-based extraction engine:
-- 🔍 Follows up to **5 levels** of nested iframes
-- 🖱️ Automatically clicks play buttons & server selectors
-- 🎭 Anti-bot detection (spoofs Chrome, hides webdriver)
-- 📡 Intercepts XHR/fetch AJAX responses for hidden stream URLs
-- 🔄 Re-encodes to **H.264 MP4** for editing software compatibility
-- 📺 Smart title extraction from page metadata & URL patterns
-
----
-
-## 🎨 Themes
-
-st6.download features **6 fully animated canvas themes**, each with unique particle effects, colour palettes, and vibes:
-
-| Theme | Description |
-|-------|-------------|
-| 🍂 **Autumn** | Warm sand-coloured waves with falling leaves that land, sit, and sink into the water |
-| 🌿 **Forest** | Dark old-growth trees with volumetric fog, sparse fireflies, near-black mood |
-| ❄️ **Snow** | Icy blue waves with unique per-flake snowflakes that dissolve on contact |
-| ✨ **Aurora** | Dark night sky with 80 stars and 6 aurora curtains with wave distortion |
-| 🔥 **Fire** | 60 fire particle blobs, 40 embers, and heat haze distortion |
-| 🌑 **Mono** | Black & white with grid lines, drifting orbs, and a brightness slider |
-
-Each theme responds to the **Colour Hue** slider, letting you shift the entire palette within the theme's range.
+| Platform | Video | Music | Notes |
+|----------|:-----:|:-----:|-------|
+| YouTube | ✅ | ✅ | Resolution picker for 1080p+ |
+| TikTok | ✅ | — | |
+| Instagram | ✅ | — | Requires cookies.txt |
+| Twitter/X | ✅ | — | |
+| Spotify | — | ✅ | Requires free API credentials |
+| SoundCloud | — | ✅ | Direct download |
+| Apple Music | — | ✅ | Via spotdl |
+| Tidal | — | ✅ | Via spotdl |
+| Other | ✅ | — | Generic extraction for streaming sites |
 
 ---
 
 ## ✨ Features
 
-### Core
-- 📥 **One-click downloads** — paste a URL, pick a format, hit download
-- 🎵 **Video & Music modes** — toggle between platforms with a smooth pill switch
-- 📋 **Queue system** — queue multiple downloads, they process automatically
-- ⏸ **Pause/Resume** — freeze downloads mid-progress and resume exactly where you left off
-- 🔤 **Subtitle burn-in** — downloads and burns English subtitles directly into the video
-- 📂 **Auto-open folder** — optionally opens the save folder when done
-- 🖼️ **Thumbnail embedding** — all audio downloads include cover art
+### Downloads
+- **Video** — MP4 with H.264 re-encode (CRF 18, slow preset)
+- **Music** — MP3, WAV, or FLAC with embedded cover art
+- **Resolution picker** — choose 1080p, 1440p, 4K, or Best for YouTube
+- **Subtitles** — burn English CC directly into the video
+- **Queue system** — batch multiple downloads
+- **Pause/Resume** — freeze mid-download and pick up where you left off
+- **Filename watermark** — ` [🍂 st6]` tag on all downloads
+- **URL tracking stripper** — auto-removes utm_*, fbclid, gclid, etc.
 
-### UI
-- 🎨 **6 animated themes** with canvas particle effects
-- 🌈 **Colour Hue slider** for fine-tuning each theme
-- ⚙️ **Settings panel** with 4 tabs (System, General, Appearance, Features)
-- 📋 **Download history** with click-to-reload
-- 📖 **First-run tutorial** with step-by-step guided tour
-- 💬 **Themed tooltips** that match the dark UI
-- 🔔 **Windows notifications** on download complete
-- 🖱️ **Drag & drop** URLs from your browser
-- 🔔 **Update popup** — centered modal with changelog, progress bar, one-click install
+### UI & Themes
+- **6 animated canvas themes** — Autumn (falling leaves), Forest (fireflies), Snow (dissolving flakes), Aurora (curtains), Fire (embers), Mono (moonlit midnight)
+- **12 languages** — English, Spanish, French, German, Portuguese, Japanese, Korean, Chinese, Russian, Arabic, Thai, Hindi
+- **Startup animation** — custom splash screen with embedded SFX
+- **Close animation** — CRT TV power-down with embedded SFX
+- **Rounded window edges** — 18px smooth corners
+- **Format-specific colours** — MP4 gold, MP3 coral, WAV teal, FLAC violet
+- **3D flip animation** — audio button flips when default format changes
+- **Download history** — browse and reopen past downloads
+- **Colour hue slider** — shift the palette within each theme
 
-### Technical
-- 🔄 **Auto-updates** — checks GitHub for new versions, downloads and installs the `.exe` automatically
-- 🔒 **No source code exposed** — updates are distributed as compiled installers
-- 🧹 **Failed download cleanup** — partial files are automatically deleted
-- 🍪 **Cookie support** — for Instagram and sites requiring authentication
-- 🎯 **Smart filename cleaning** — removes hashtags, @mentions, junk characters from filenames
-- 📡 **Binary management** — downloads and manages yt-dlp, ffmpeg, and spotdl automatically
-- 🗑️ **Uninstall** — clean removal from Settings → System
-
----
-
-## 📦 Installation
-
-### Quick Start
-1. **[Download the latest release](https://github.com/st6autumn/st6-download/releases/latest)**
-2. Run the installer
-3. Open st6.download
-4. Click **⬇ Download All Dependencies** in Settings → System (one-time setup)
-5. Start downloading!
-
-### Spotify / Apple Music / Tidal Setup
-These platforms require free Spotify API credentials (takes 2 minutes):
-1. Go to [developer.spotify.com/dashboard](https://developer.spotify.com/dashboard)
-2. Create an app → set redirect URI to `https://localhost:8888/callback`
-3. Copy Client ID and Client Secret into Settings → General
-
-### Instagram Setup
-Instagram requires cookies for authentication:
-1. Install the [Get cookies.txt LOCALLY](https://chromewebstore.google.com/detail/get-cookiestxt-locally/cclelndahbckbenkjhflpdbgdldlbecc) Chrome extension
-2. Go to instagram.com while logged in
-3. Export cookies → browse the file in Settings → General
+### Settings (4 tabs)
+- **System** — updates, dependencies, save folder, uninstall
+- **General** — language, audio format, Instagram cookies, Spotify API
+- **Appearance** — theme picker, colour hue slider
+- **Features** — 11 toggleable features including startup/close animations
 
 ---
 
@@ -140,6 +84,15 @@ st6.download checks for updates automatically on startup. When a new version is 
 3. Click **"Install & Restart"** to apply
 
 You can also manually check via **Settings → System → Check for Updates**.
+
+---
+
+## 📥 Instagram Setup
+
+Instagram requires a cookies.txt file for downloads:
+1. Install the [Get cookies.txt LOCALLY](https://chromewebstore.google.com/detail/get-cookiestxt-locally/cclelndahbckbenkjhflpdbgdldlbecc) Chrome extension
+2. Go to instagram.com while logged in
+3. Export cookies → browse the file in Settings → General
 
 ---
 
@@ -159,12 +112,13 @@ You can also manually check via **Settings → System → Check for Updates**.
 
 | Metric | Value |
 |--------|-------|
-| Frontend | 2,387 lines |
-| Backend | 1,834 lines |
+| Frontend | 3,111 lines |
+| Backend | 1,996 lines |
+| Languages | 12 |
 | Themes | 6 animated |
 | Platforms | 9 supported |
 | Settings tabs | 4 (System, General, Appearance, Features) |
-| Canvas particles | Leaves, snowflakes, fireflies, embers, aurora curtains, orbs |
+| Feature toggles | 11 |
 
 ---
 
